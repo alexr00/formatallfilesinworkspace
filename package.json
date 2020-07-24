@@ -1,0 +1,67 @@
+{
+	"name": "formatallfilesinworkspace",
+	"displayName": "Format All Files in Workspace",
+	"description": "A silly little extension that opens each of the files in your workspace and formats them using whatever extensions you already have installed for formatting. It is recommended that you set the included file extensions and excluded folder settings before running, as the defaults may not be appropriate for your setup. Warning: Formatting all your files may be slow.",
+	"version": "0.0.1",
+	"publisher": "alexr00",
+	"engines": {
+		"vscode": "^1.47.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:formatallfilesinworkspace.formatAll"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "formatallfilesinworkspace.formatAll",
+				"title": "Format All Files in Workspace"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Format All Files in Workspace",
+			"properties": {
+				"formatAll.includeFileExtensions": {
+					"type": "array",
+					"default": [
+						".ts",
+						".json"
+					],
+					"description": "List of file extensions to include when formating all files."
+				},
+				"formatAll.excludeFolders": {
+					"type": "array",
+					"default": [
+						"node_modules",
+						"out",
+						".vscode-test",
+						"media"
+					],
+					"description": "List of folder to exclude when formatting all files."
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.47.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"typescript": "^3.3.1",
+		"tslint": "^5.12.1",
+		"vscode-test": "^1.2.0"
+	}
+}
