@@ -4,6 +4,9 @@
 	"description": "A silly little extension that opens each of the files in your workspace and formats them using whatever extensions you already have installed for formatting. It is recommended that you set the included file extensions and excluded folder settings before running, as the defaults may not be appropriate for your setup. Warning: Formatting all your files may be slow.",
 	"version": "0.0.1",
 	"publisher": "alexr00",
+	"repository": {
+		"url": "https://github.com/alexr00/formatallfilesinworkspace"
+	},
 	"engines": {
 		"vscode": "^1.47.0"
 	},
