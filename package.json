@@ -8,6 +8,7 @@
 		"vscode": "^1.47.0"
 	},
 	"categories": [
+		"Formatters",
 		"Other"
 	],
 	"activationEvents": [
