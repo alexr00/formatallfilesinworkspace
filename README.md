@@ -6,6 +6,8 @@ A silly little extension provides the **Format All Files in Workspace** command,
 
 testing a change
 
+another change!
+
 ## Extension Settings
 
 * `formatAll.includeFileExtensions`: Only files with file extensions in this list will be opened and formatted. Defaults to `[".ts", ".json"]`.
