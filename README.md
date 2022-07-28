@@ -4,6 +4,8 @@
 
 A silly little extension provides the **Format All Files in Workspace** command, which opens each of the files in your workspace and formats them using whatever extensions you already have installed for formatting. It is recommended that you set the included file extensions and excluded folder settings before running, as the defaults may not be appropriate for your setup. **Warning**: Formatting all your files may be slow.
 
+testing a change
+
 ## Extension Settings
 
 * `formatAll.includeFileExtensions`: Only files with file extensions in this list will be opened and formatted. Defaults to `[".ts", ".json"]`.
